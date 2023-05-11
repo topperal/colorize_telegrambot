@@ -7,8 +7,6 @@ import argparse
 import matplotlib.pyplot as plt
 from colorization.colorizers import *
 
-bot = telebot.TeleBot('6035021428:AAGhB49BPKl4e7QWyx6ogoYCTzNVS0aNR5Y')
-
 @bot.message_handler(commands=['start'])
 def start(message):
     bot.send_message(message.chat.id, 'Пришлите фотографию, которую хотите раскрасить')
